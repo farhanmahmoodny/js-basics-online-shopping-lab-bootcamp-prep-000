@@ -1,6 +1,9 @@
 var cart = [];
 
 function getCart() {
+  if(placeOrder() !== undefined){
+    return cart.slice(0, (cart.length))
+  }
  return cart;
 }
 
